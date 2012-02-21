@@ -1,3 +1,5 @@
+require 'sudoku_solver'
+
 COMPLETE_BOARD =
                 [
                   [5,3,4,6,7,8,9,1,2],
