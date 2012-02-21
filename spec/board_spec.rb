@@ -35,10 +35,24 @@ describe Board do
       Board.parse(board).possibilities(0, 0).should == [2, 3, 4, 5, 6, 7, 8, 9]
     end
 
+    it "should eliminate multiple possibilities in the same row" do
+      board = EMPTY_BOARD.deep_clone
+      board[0][8] = 1
+      board[0][3] = 9
+      Board.parse(board).possibilities(0, 0).should == [2, 3, 4, 5, 6, 7, 8]
+    end
+
     it "should eliminate possibilities in the same column" do
       board = EMPTY_BOARD.deep_clone
       board[7][0] = 1
       Board.parse(board).possibilities(0, 0).should == [2, 3, 4, 5, 6, 7, 8, 9]
+    end
+
+    it "should eliminate possibilities in the same row same column" do
+      board = EMPTY_BOARD.deep_clone
+      board[7][0] = 1
+      board[0][1] = 5
+      Board.parse(board).possibilities(0, 0).should == [2, 3, 4, 6, 7, 8, 9]
     end
   end
 end
