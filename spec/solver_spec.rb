@@ -1,17 +1,10 @@
-
-
 require 'spec_helper.rb'
 
-class SudokoSolver
-  def initialize(board)
-  end
-end
-
-describe SudokoSolver do
+describe SudokuSolver do
   it "does something" do
 
      board = Board.new(COMPLETEBOARD)
 
-     SudokoSolver.new(COMPLETEBOARD)
+     SudokuSolver.new(COMPLETEBOARD)
   end
 end
