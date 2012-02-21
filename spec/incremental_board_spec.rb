@@ -1,5 +1,6 @@
 require 'spec_helper'
-
+require 'sudoku_solver'
+require 'board'
 describe "Complete Puzzle Specs" do
   context "solving incremental boards" do
     context "single digit row missing boards" do
