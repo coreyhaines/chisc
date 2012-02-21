@@ -17,4 +17,10 @@ describe Board do
 
     Board.parse(board).complete?.should be_false
   end
+
+  it "is incomplete if there is a repeat" do
+    board = [1, 2, 1]
+
+    Board.parse(board).complete?.should be_false
+  end
 end
