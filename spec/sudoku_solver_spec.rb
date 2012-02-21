@@ -16,8 +16,8 @@ MY_BOARD =
 
 class SudokuSolver
   def complete(board)
-    missing = board[0] - (1...9).to_a
-    board[0][0] = 5 if board[0][0] == nil
+    missing = (1...9).to_a - board[0]
+    board[0][0] = missing.first if board[0][0] == nil
     board
   end
 end
