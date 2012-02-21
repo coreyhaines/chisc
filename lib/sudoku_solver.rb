@@ -8,4 +8,7 @@ class SudokuSolver
 end
 
 class Board
-end
+  def self.parse(s)
+    Board.new
+  end
+  end
