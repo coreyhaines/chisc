@@ -26,7 +26,7 @@ COMPLETE_BOARD_2 =
                 ]
 module DeepClone
   def deep_clone
-   self.inject([]) { |accum, row| accum << row }
+   self.inject([]) { |accum, row| accum << row.dup }
   end
 end
 COMPLETE_BOARD.extend(DeepClone)
