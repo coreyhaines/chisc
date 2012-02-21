@@ -7,4 +7,8 @@ describe Board do
       Board.parse([123])
     }.should_not raise_error
   end
+
+  it "parses the board" do
+    Board.parse(COMPLETE_BOARD).should == COMPLETE_BOARD
+  end
 end

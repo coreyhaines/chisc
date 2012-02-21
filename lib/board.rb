@@ -1,6 +1,6 @@
 class Board
 
-  def self.parse(arg)
-
+  def self.parse(board)
+    board
   end
 end
