@@ -16,7 +16,7 @@ MY_BOARD =
 
 class SudokuSolver
   def complete(board)
-    board[0][0] = 5
+    board[0][0] = 5 if board[0][0] == nil
     board
   end
 end
