@@ -15,7 +15,6 @@ describe Board do
                 [nil,nil,nil,nil,8,nil,nil,7,9]
             ])
 
-
     board.complete?.should be_false
   end
 
