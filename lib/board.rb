@@ -29,7 +29,7 @@ class Board
   end
 
   def missing_elements(row, column)
-    []
+    (1..9).to_a - @board[row]
   end
 
 end

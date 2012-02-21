@@ -26,9 +26,16 @@ describe Board do
     end
   end
 
-  it "gives you missing elements from a row and column" do
+  it "gives you no missing elements from a row and column" do
     board = Board.parse(COMPLETE_BOARD)
     board.missing_elements(0, 0).should == []
+  end
+
+  it "gives [5] for missing elements at 0, 0" do
+    grid = COMPLETE_BOARD.deep_clone
+    grid[0][0] = nil
+    board = Board.parse(grid)
+    board.missing_elements(0, 0).should == [5]
   end
 
 
