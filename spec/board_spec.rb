@@ -28,5 +28,14 @@ describe Board do
       board.encoded.should == "123"
     end
 
+    it "encodes an array of arrays" do
+      board = Board.parse(
+        [
+          [1,2,3],
+          [4,5,6]
+      ])
+      board.encoded.should == "123456"
+    end
+
   end
 end
