@@ -9,7 +9,7 @@ class Board
   end
 
   def encoded
-    return grid.to_s
+    return grid.flatten.join.to_s
   end
 
   def sum_row(index)
