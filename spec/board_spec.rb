@@ -47,5 +47,14 @@ describe Board do
 
       board.missing_values_in_row(0).should == [1]
     end
+
+    it "finds missing number in a column" do
+      grid = COMPLETE_BOARD.deep_clone
+      grid[0][0] = nil
+
+      board = Board.parse(grid)
+
+      board.missing_values_in_column(0).should == [5]
+    end
   end
 end

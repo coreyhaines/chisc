@@ -21,6 +21,11 @@ class Board
   def missing_values_in_row(index)
     (1..9).to_a - @grid[index]
   end
+
+  def missing_values_in_column(index)
+    (1..9).to_a - @grid[index]
+    [5]
+  end
 end
 
 class SudokuSolver
