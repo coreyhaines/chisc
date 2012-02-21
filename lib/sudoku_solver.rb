@@ -10,7 +10,13 @@ class SudokuSolver
   end
 
   def sum_column(index)
-    @board.columns(index).inject(0){|sum,x| sum += x}
+    sum(@board.columns(index))
+  end
+
+  private
+
+  def sum(collection)
+    collection.inject(0) {|sum, x| sum += x }
   end
 
 end
