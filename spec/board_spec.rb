@@ -22,5 +22,11 @@ describe Board do
       board = Board.parse([])
       board.grid.should == []
     end
+
+    it "encoded returns a string representation of grid" do
+      board = Board.parse([1, 2, 3])
+      board.encoded.should == "123"
+    end
+
   end
 end

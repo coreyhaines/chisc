@@ -9,8 +9,10 @@ class Board
   end
 
   def encoded
-    return ""
+    return grid.to_s
   end
+
+
 end
 
 class SudokuSolver
