@@ -26,7 +26,7 @@ describe Board do
     end
 
     it "return a board" do
-      Board.parse(EMPTY_BOARD.deep_clone).board.should == EMPTY_BOARD
+      Board.parse(EMPTY_BOARD).board.should == EMPTY_BOARD
     end
 
   end
