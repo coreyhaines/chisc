@@ -1,4 +1,5 @@
 require 'board'
+require 'spec_helper'
 
 describe Board do
   describe ".parse" do
@@ -40,6 +41,13 @@ describe Board do
     it "sums one row" do
       board = Board.parse([(1..9).to_a])
       board.sum_row(0).should == 45
+    end
+    
+    it "returns the sum of a row with one nil value" do
+      new_board = COMPLETE_BOARD.deep_clone
+      n = rand(9)
+      new_board[0][n] = nil
+      board.sum_row(0).should == 45 - n
     end
 
   end

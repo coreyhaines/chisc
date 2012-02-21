@@ -9,13 +9,11 @@ class Board
   end
 
   def encoded
-    return grid.to_s
+    grid.join
   end
 
   def sum_row(index)
-    grid[index].inject(0) do |sum, obj|
-      sum += obj
-    end
+    grid[index].inject(0, &:+)
   end
 end
 
