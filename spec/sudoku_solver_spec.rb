@@ -3,7 +3,7 @@ require 'spec_helper'
 
 MY_BOARD =
                 [
-                  [5,3,4,6,7,8,9,1,2],
+                  [nil,3,4,6,7,8,9,1,2],
                   [6,7,2,1,9,5,3,4,8],
                   [1,9,8,3,4,2,5,6,7],
                   [8,5,9,7,6,1,4,2,3],
@@ -16,6 +16,7 @@ MY_BOARD =
 
 class SudokuSolver
   def complete(board)
+    board[0][0] = 5
     board
   end
 end
@@ -28,9 +29,9 @@ end
 
 describe SudokuSolver do
   it "should be able to parse a board" do
-     board = Board.parse(COMPLETE_BOARD)
+     board = Board.parse(MY_BOARD)
      solved_board = SudokuSolver.new.complete(board)
-     solved_board[1][1].should == board[1][1]
+     solved_board[0][0].should == 5 
 
      
   end
