@@ -1,10 +1,15 @@
 class Board
-  def self.parse(what)
-    self.new
+
+  def initialize(board)
+    @board = board
+  end
+
+  def self.parse(raw_board)
+    self.new(raw_board)
   end
 
   def row(index)
-    [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    @board[index]
   end
 end
 

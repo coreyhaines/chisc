@@ -9,7 +9,7 @@ describe Board do
 
   it "should have columns" do 
     board = Board.parse([
-      [1, 2, 3, 4, 5, 6, 7, 8, 9],
+      [1, 2, 3, 5, 4, 6, 7, 8, 9],
       [1, 2, 3, 4, 5, 6, 7, 8, 9],
       [1, 2, 3, 4, 5, 6, 7, 8, 9],
       [1, 2, 3, 4, 5, 6, 7, 8, 9],
@@ -18,8 +18,9 @@ describe Board do
       [1, 2, 3, 4, 5, 6, 7, 8, 9],
       [1, 2, 3, 4, 5, 6, 7, 8, 9],
       [1, 2, 3, 4, 5, 6, 7, 8, 9]])
-      board.should_not be_nil
-      board.row(0).should == [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    board.should_not be_nil
+    board.row(0).should == [1, 2, 3, 5, 4, 6, 7, 8, 9]
+    board.row(1).should == [1, 2, 3, 4, 5, 6, 7, 8, 9]
   end
 
 end
