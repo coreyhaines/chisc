@@ -13,6 +13,9 @@ class Board
     board[row].each do |num|
       possible.delete(num)
     end
+    board.each do |row|
+      possible.delete(row[column])
+    end
     possible
   end
 end
