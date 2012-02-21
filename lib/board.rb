@@ -17,6 +17,10 @@ class Board
       sum += obj
     end
   end
+
+  def missing_values(row)
+    (1..9).to_a - row
+  end
 end
 
 class SudokuSolver
