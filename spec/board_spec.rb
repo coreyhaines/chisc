@@ -59,11 +59,11 @@ describe Board do
 
     it "finds another missing number in a column" do
       grid = COMPLETE_BOARD.deep_clone
-      grid[0][5] = nil
+      grid[2][5] = nil
 
       board = Board.parse(grid)
 
-      board.missing_values_in_column(5).should == [8]
+      board.missing_values_in_column(5).should == [2]
     end
   end
 end
