@@ -15,4 +15,8 @@ class Board
       end
     end
   end
+
+  def first_complete_row
+    @board.find { |row| row.all? }
+  end
 end
