@@ -28,4 +28,8 @@ class Board
     encoded == other.encoded
   end
 
+  def missing_elements(row, column)
+    []
+  end
+
 end

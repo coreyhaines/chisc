@@ -26,5 +26,10 @@ describe Board do
     end
   end
 
+  it "gives you missing elements from a row and column" do
+    board = Board.parse(COMPLETE_BOARD)
+    board.missing_elements(0, 0).should == []
+  end
+
 
 end
