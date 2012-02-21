@@ -1,5 +1,4 @@
 class Board
-
   def initialize(board)
     @board = board
   end
@@ -15,5 +14,8 @@ class Board
   def columns(index)
     [1,1,1,1,1,1,1,1,1]
   end
-end
 
+  def encode
+    @board.flatten.join
+  end
+end

@@ -38,18 +38,7 @@ describe Board do
   end
 
   it "encodes the board" do
-    board = Board.new([
-      [1, 2, 3, 5, 4, 6, 7, 8, 9],
-      [1, 2, 3, 4, 5, 6, 7, 8, 9],
-      [1, 2, 3, 4, 5, 6, 7, 8, 9],
-      [1, 2, 3, 4, 5, 6, 7, 8, 9],
-      [1, 2, 3, 4, 5, 6, 7, 8, 9],
-      [1, 2, 3, 4, 5, 6, 7, 8, 9],
-      [1, 2, 3, 4, 5, 6, 7, 8, 9],
-      [1, 2, 3, 4, 5, 6, 7, 8, 9],
-      [1, 2, 3, 4, 5, 6, 7, 8, 9]])
-
-    board.encode.should == "123456789" * 9
+    board = Board.new(COMPLETE_BOARD)
+    board.encode.should == COMPLETE_BOARD.flatten.join
   end
-
 end
