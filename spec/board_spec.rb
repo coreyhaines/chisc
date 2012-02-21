@@ -37,5 +37,10 @@ describe Board do
       board.encoded.should == "123456"
     end
 
+    it "sums one row" do
+      board = Board.parse([(1..9).to_a])
+      board.sum_row(0).should == 45
+    end
+
   end
 end

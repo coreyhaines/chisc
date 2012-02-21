@@ -12,7 +12,11 @@ class Board
     return grid.to_s
   end
 
-
+  def sum_row(index)
+    grid[index].inject(0) do |sum, obj|
+      sum += obj
+    end
+  end
 end
 
 class SudokuSolver
