@@ -1,4 +1,6 @@
 require 'spec_helper'
+require 'sudoku_solver'
+require 'board'
 
 describe "Complete Puzzle Specs" do
   context "solving full unsolved boards" do

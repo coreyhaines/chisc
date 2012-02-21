@@ -1,9 +1,12 @@
 require 'spec_helper'
+require 'sudoku_solver'
+require 'board'
 
 describe "Complete Puzzle Specs" do
   context "solving incremental boards" do
     context "single digit row missing boards" do
       it "solves if only one missing digit" do
+      pending
         starting_board = COMPLETE_BOARD.deep_clone
 
         starting_board[rand(9)][rand(9)] = nil
@@ -14,6 +17,7 @@ describe "Complete Puzzle Specs" do
       end
 
       it "solves if two missing digits" do
+      pending
         starting_board = COMPLETE_BOARD.deep_clone
 
         starting_board[4][8] = nil
@@ -25,6 +29,7 @@ describe "Complete Puzzle Specs" do
       end
 
       it "solves if three missing digits" do
+      pending
         starting_board = COMPLETE_BOARD.deep_clone
 
         starting_board[4][8] = nil
@@ -37,6 +42,7 @@ describe "Complete Puzzle Specs" do
       end
 
       it "solves if two missing digits in same column" do
+      pending
         starting_board = COMPLETE_BOARD.deep_clone
 
         starting_board[4][8] = nil
@@ -48,6 +54,7 @@ describe "Complete Puzzle Specs" do
       end
 
       it "solves if two missings digits in same row" do
+      pending
         starting_board = COMPLETE_BOARD.deep_clone
 
         starting_board[1][5] = nil
@@ -59,6 +66,7 @@ describe "Complete Puzzle Specs" do
       end
 
       it "solves if missing digits in same row/columns, different squares" do
+      pending
         starting_board = COMPLETE_BOARD.deep_clone
 
         starting_board[1][1] = nil
