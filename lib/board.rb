@@ -18,8 +18,8 @@ class Board
     end
   end
 
-  def missing_values_in_row(row)
-    (1..9).to_a - row
+  def missing_values_in_row(index)
+    (1..9).to_a - @grid[index].to_a
   end
 end
 
