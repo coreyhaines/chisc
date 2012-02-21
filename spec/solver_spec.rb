@@ -7,10 +7,10 @@ class SudokoSolver
   end
 end
 
-describe SudokoSolver
-  it "does something"
+describe SudokoSolver do
+  it "does something" do
 
-`     board = Board.new(COMPLETEBOARD)
+     board = Board.new(COMPLETEBOARD)
 
      SudokoSolver.new(COMPLETEBOARD)
   end
