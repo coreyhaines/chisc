@@ -9,7 +9,11 @@ class Board
   end
   
   def possibilities(row, column)
-    [1,2,3,4,5,6,7,8,9]
+    possible = [1,2,3,4,5,6,7,8,9]
+    board.each do |num|
+      possible.delete(num)
+    end
+    possible
   end
 end
 
