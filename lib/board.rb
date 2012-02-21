@@ -11,4 +11,9 @@ class Board
   def encoded
     @board.flatten.join("")
   end
+
+  def row(index)
+    @board[index]
+  end
+
 end
