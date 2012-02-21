@@ -1,5 +1,5 @@
-require_relative '../lib/SudokuSolver.rb'
-require_relative '../lib/Board.rb'
+require_relative '../lib/board.rb'
+
 COMPLETE_BOARD =
                 [
                   [5,3,4,6,7,8,9,1,2],
