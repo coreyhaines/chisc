@@ -19,7 +19,7 @@ class Board
   end
 
   def missing_values_in_row(index)
-    (1..9).to_a - @grid[index].to_a
+    (1..9).to_a - @grid[index]
   end
 end
 
