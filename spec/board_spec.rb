@@ -13,9 +13,14 @@ describe Board do
       solved.should be_a Board
     end
 
-    it "encoded returns a stirng" do
+    it "encoded returns a string" do
       board = Board.parse([])
       board.encoded.should be_a String
+    end
+
+    it "returns a board with a usable grid" do
+      board = Board.parse([])
+      board.grid.should == []
     end
   end
 end
