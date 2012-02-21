@@ -9,7 +9,7 @@ describe "Complete Puzzle Specs" do
         starting_board[rand(9)][rand(9)] = nil
 
         solver = SudokuSolver.new
-        solved_board = solver.complete(Board.parse(starting_board))
+        solved_board = solver.solve(Board.parse(starting_board))
         solved_board.encoded.should == COMPLETE_BOARD.flatten.join("")
       end
 
@@ -20,7 +20,7 @@ describe "Complete Puzzle Specs" do
         starting_board[1][3] = nil
 
         solver = SudokuSolver.new
-        solved_board = solver.complete(Board.parse(starting_board))
+        solved_board = solver.solve(Board.parse(starting_board))
         solved_board.encoded.should == COMPLETE_BOARD.flatten.join("")
       end
 
@@ -32,7 +32,7 @@ describe "Complete Puzzle Specs" do
         starting_board[8][1] = nil
 
         solver = SudokuSolver.new
-        solved_board = solver.complete(Board.parse(starting_board))
+        solved_board = solver.solve(Board.parse(starting_board))
         solved_board.encoded.should == COMPLETE_BOARD.flatten.join("")
       end
 
@@ -43,7 +43,7 @@ describe "Complete Puzzle Specs" do
         starting_board[1][8] = nil
 
         solver = SudokuSolver.new
-        solved_board = solver.complete(Board.parse(starting_board))
+        solved_board = solver.solve(Board.parse(starting_board))
         solved_board.encoded.should == COMPLETE_BOARD.flatten.join("")
       end
 
@@ -54,7 +54,7 @@ describe "Complete Puzzle Specs" do
         starting_board[1][8] = nil
 
         solver = SudokuSolver.new
-        solved_board = solver.complete(Board.parse(starting_board))
+        solved_board = solver.solve(Board.parse(starting_board))
         solved_board.encoded.should == COMPLETE_BOARD.flatten.join("")
       end
 
@@ -69,7 +69,7 @@ describe "Complete Puzzle Specs" do
         starting_board[7][4] = nil
 
         solver = SudokuSolver.new
-        solved_board = solver.complete(Board.parse(starting_board))
+        solved_board = solver.solve(Board.parse(starting_board))
         solved_board.encoded.should == COMPLETE_BOARD.flatten.join("")
       end
     end
