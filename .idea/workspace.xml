@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df4413e1-5333-4e70-bf3f-ce666568f3c8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/board.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/board_spec.rb" afterPath="$PROJECT_DIR$/spec/board_spec.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/board.rb" afterPath="$PROJECT_DIR$/spec/board.rb" />
     </list>
     <ignored path="chisc.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,7 +45,7 @@
       <file leaf-file-name="board.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spec/board.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="15" selection-start="137" selection-end="137" vertical-scroll-proportion="0.2542373">
+            <state line="14" column="8" selection-start="198" selection-end="198" vertical-scroll-proportion="0.3559322">
               <folding />
             </state>
           </provider>
@@ -362,7 +360,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/board.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="15" selection-start="137" selection-end="137" vertical-scroll-proportion="0.2542373">
+        <state line="14" column="8" selection-start="198" selection-end="198" vertical-scroll-proportion="0.3559322">
           <folding />
         </state>
       </provider>

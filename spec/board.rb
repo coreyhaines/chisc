@@ -9,9 +9,10 @@ class Board
   end
 
   def complete?
-    @board.each do |row|
-      row.each do |cell|
-        return false if cell.nil?
+
+    !@board.any? do |row|
+      row.any? do |cell|
+        cell.nil?
       end
     end
 
