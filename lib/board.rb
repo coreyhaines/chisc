@@ -12,11 +12,7 @@ class Board
   end
 
   def columns(index)
-    columns = []
-    @board.each do |row|
-      columns << row[index]
-    end
-    columns
+    @board.collect { |row| row[index] }
   end
 
   def encode
