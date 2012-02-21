@@ -11,7 +11,7 @@ class Board
   end
 
   def complete?
-    return false if @board.any? {|cell| cell.nil?}
+    return false if @board.flatten.any? {|cell| cell.nil?}
     uniques = @board.uniq
     uniques.size == @board.size
   end
@@ -24,6 +24,12 @@ describe Board do
 
     Board.parse(board).complete?.should be_false
   end
+
+  it "board is incomplete with a nil in multidimensional" do
+      board = [[1, 2, 3], [1,3,nil],[1, 2, 3] ]
+
+      Board.parse(board).complete?.should be_false
+    end
 
   it "is incomplete if there is a repeat" do
     board = [1, 2, 1]
