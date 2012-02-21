@@ -9,6 +9,7 @@ describe Board do
   end
 
   it "parses the board" do
-    Board.parse(COMPLETE_BOARD).should == COMPLETE_BOARD
+    board = Board.parse(COMPLETE_BOARD)
+    board.encoded.should == COMPLETE_BOARD.flatten.join("")
   end
 end

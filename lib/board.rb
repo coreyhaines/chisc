@@ -1,6 +1,14 @@
 class Board
 
   def self.parse(board)
-    board
+    self.new(board)
+  end
+
+  def initialize(board)
+    @board = board
+  end
+
+  def encoded
+    @board.flatten.join("")
   end
 end
