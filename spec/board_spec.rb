@@ -56,5 +56,14 @@ describe Board do
 
       board.missing_values_in_column(0).should == [5]
     end
+
+    it "finds another missing number in a column" do
+      grid = COMPLETE_BOARD.deep_clone
+      grid[0][5] = nil
+
+      board = Board.parse(grid)
+
+      board.missing_values_in_column(5).should == [8]
+    end
   end
 end

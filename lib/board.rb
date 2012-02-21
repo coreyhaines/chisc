@@ -23,8 +23,8 @@ class Board
   end
 
   def missing_values_in_column(index)
-    (1..9).to_a - @grid[index]
-    [5]
+    puts @grid.map{|row| row[index]}.inspect
+    (1..9).to_a - @grid.map{|row| row[index]}
   end
 end
 
