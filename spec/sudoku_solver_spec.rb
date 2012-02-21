@@ -11,4 +11,6 @@ describe SudokuSolver do
     board = Board.parse([nil])
     SudokuSolver.solve(board) == [1]
   end
+
+
 end

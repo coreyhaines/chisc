@@ -16,6 +16,10 @@ class Board
     uniques.size == @board.size
   end
 
+  def first_empty
+    [0]
+  end
+
 end
 describe Board do
 
@@ -48,4 +52,10 @@ describe Board do
 
     Board.parse(board).complete?.should be_true
   end
+
+  it "gets me the first empty cell" do
+    board = [nil, 2, 3]
+    Board.parse(board).first_empty.should == [0]
+  end
+
 end
