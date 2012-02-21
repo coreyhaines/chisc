@@ -1,5 +1,7 @@
-
 class SudokuSolver
-  def initialize(board)
+  def initialize
+  end
+  
+  def complete(board)
   end
 end
