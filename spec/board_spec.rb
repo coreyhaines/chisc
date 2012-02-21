@@ -12,7 +12,7 @@ class Board
 
   def complete?
     return false if @board.flatten.any? {|cell| cell.nil?}
-    uniques = @board.uniq
+    uniques = @board.flatten.uniq
     uniques.size == @board.size
   end
 
@@ -33,6 +33,12 @@ describe Board do
 
   it "is incomplete if there is a repeat" do
     board = [1, 2, 1]
+
+    Board.parse(board).complete?.should be_false
+  end
+
+  it "is incomplete if there is a repeat" do
+    board = [[1, 2, 3], [1, 5, 6],[7, 8, 9] ]
 
     Board.parse(board).complete?.should be_false
   end
