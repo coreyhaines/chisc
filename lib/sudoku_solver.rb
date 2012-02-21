@@ -6,7 +6,7 @@ class SudokuSolver
 
 
   def sum_row(index)
-    @board[index].inject(0){|sum,x| sum += x}
+    sum(@board[index])
   end
 
   def sum_column(index)
