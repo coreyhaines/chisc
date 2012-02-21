@@ -21,9 +21,12 @@ describe Board do
       Board.parse(raw_board).should be_a_kind_of Board
     end
 
-
     it "should have all possibilities" do
       Board.parse(EMPTY_BOARD.deep_clone).possibilities(0, 0).should == [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    end
+
+    it "return a board" do
+      Board.parse(EMPTY_BOARD.deep_clone).board.should == EMPTY_BOARD
     end
 
   end
