@@ -6,5 +6,9 @@ class SudokuSolver
    def complete(board)
     
    end
+   
+   def encoded
+    
+   end
   
 end
