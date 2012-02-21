@@ -3,7 +3,6 @@ require 'board'
 
 describe Board do
   it 'parses a two dimensional array' do
-    board = Board.new
-    board.parse(COMPLETE_BOARD)
+    board = Board.parse(COMPLETE_BOARD)
   end
 end

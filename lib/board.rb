@@ -1,5 +1,5 @@
 class Board
-  def parse(board)
+  def self.parse(board)
 
   end
 end
