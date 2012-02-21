@@ -12,7 +12,7 @@ class Board
   end
 
   def columns(index)
-    @board.collect { |row| row[index] }
+    @board.map { |row| row[index] }
   end
 
   def encode
