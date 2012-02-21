@@ -3,5 +3,9 @@ class SudokuSolver
   end
   
   def complete(board)
+    Board.new
   end
+end
+
+class Board
 end

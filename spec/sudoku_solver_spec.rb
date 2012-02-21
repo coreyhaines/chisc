@@ -8,5 +8,11 @@ describe SudokuSolver do
     it 'takes a board' do
       expect { solver.complete board }.to_not raise_error
     end
+    
+    it 'it returns a different board' do
+      result = solver.complete(board)
+      result.should be_a_kind_of Board
+      result.should_not equal board
+    end
   end
 end
