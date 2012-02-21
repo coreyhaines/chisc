@@ -10,7 +10,7 @@ class Board
   
   def possibilities(row, column)
     possible = [1,2,3,4,5,6,7,8,9]
-    board.each do |num|
+    board[row].each do |num|
       possible.delete(num)
     end
     possible

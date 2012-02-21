@@ -31,7 +31,7 @@ describe Board do
 
     it "should eliminate possibilities in the same row" do
       board = EMPTY_BOARD.deep_clone
-      board[0, 8] = 1
+      board[0][8] = 1
       Board.parse(board).possibilities(0, 0).should == [2, 3, 4, 5, 6, 7, 8, 9]
     end
   end
