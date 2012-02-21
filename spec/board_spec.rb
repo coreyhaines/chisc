@@ -19,5 +19,12 @@ describe Board do
     board.row(0).should == COMPLETE_BOARD[0]
   end
 
+  it "gives you a column" do
+    board = Board.parse(COMPLETE_BOARD)
+    board.columns(0).should == COMPLETE_BOARD.map do |row|
+      row[0]
+    end
+  end
+
 
 end

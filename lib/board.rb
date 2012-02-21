@@ -16,6 +16,12 @@ class Board
     @board[index]
   end
 
+  def columns(index)
+    @board.map do |row|
+      row[0]
+    end
+  end
+
   alias :[] :row
 
 end
