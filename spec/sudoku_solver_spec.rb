@@ -12,4 +12,11 @@ describe SudokuSolver do
 
   end
 
+  it "can sum a row from a board" do
+    solver = SudokuSolver.new
+    board = Board.parse ([[1,2,3]])
+    solver.complete(board)
+    solver.sum_row(0).should == 6
+  end
+
 end

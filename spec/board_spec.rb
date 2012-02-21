@@ -18,4 +18,6 @@ describe Board do
     board = Board.parse(COMPLETE_BOARD)
     board.row(0).should == COMPLETE_BOARD[0]
   end
+
+
 end

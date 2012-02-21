@@ -16,4 +16,6 @@ class Board
     @board[index]
   end
 
+  alias :[] :row
+
 end
