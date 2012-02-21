@@ -19,4 +19,8 @@ class Board
   def first_complete_row
     @board.find { |row| row.all? }
   end
+
+  def first_complete_column
+    @board.transpose.find { |row| row.all? }
+  end
 end
