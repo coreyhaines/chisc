@@ -1,6 +1,11 @@
 class Board
+  attr_reader :grid
   def self.parse(grid)
-    return new
+    return new(grid)
+  end
+
+  def initialize(grid)
+    @grid = grid
   end
 
   def encoded
