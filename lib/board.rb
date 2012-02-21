@@ -11,5 +11,9 @@ class Board
   def row(index)
     @board[index]
   end
+
+  def columns(index)
+    [1,1,1,1,1,1,1,1,1]
+  end
 end
 
