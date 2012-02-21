@@ -1,12 +1,19 @@
 require 'spec_helper'
 
 class Board
+
+  def initialize(board)
+    @board = board
+  end
+
   def self.parse(board)
     Board.new(board)
   end
 
   def complete?
-    false
+    return false if @board.any? {|cell| cell.nil?}
+    uniques = @board.uniq
+    uniques.size == @board.size
   end
 
 end
@@ -22,5 +29,11 @@ describe Board do
     board = [1, 2, 1]
 
     Board.parse(board).complete?.should be_false
+  end
+
+  it "is complete " do
+    board = [1, 2, 3]
+
+    Board.parse(board).complete?.should be_true
   end
 end
