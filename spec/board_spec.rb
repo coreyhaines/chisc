@@ -34,7 +34,7 @@ describe Board do
       [1, 2, 3, 4, 5, 6, 7, 8, 9],
       [1, 2, 3, 4, 5, 6, 7, 8, 9],
       [1, 2, 3, 4, 5, 6, 7, 8, 9]])
-    board.columns(0).should == ([1] * 9).flatten
+    board.columns(0).should == [1] * 9
   end
 
 end
