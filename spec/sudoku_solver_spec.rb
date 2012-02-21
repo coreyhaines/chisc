@@ -2,7 +2,7 @@
 require 'spec_helper'
 
 class SudokuSolver
-  def initialize(board)
+  def complete(board)
   end
 end
 
@@ -14,7 +14,7 @@ end
 describe SudokuSolver do
   it "should be able to parse a board" do
      board = Board.parse(COMPLETE_BOARD)
-     SudokoSolver.new.complete(board
+     SudokuSolver.new.complete(board)
 
      
   end
