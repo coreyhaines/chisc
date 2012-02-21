@@ -45,7 +45,7 @@ describe Board do
     it "finds missing number in a row" do
       board = Board.parse([])
 
-      board.missing_values([nil,2,3,4,5,6,7,8,9]).should == [1]
+      board.missing_values_in_row([nil,2,3,4,5,6,7,8,9]).should == [1]
     end
   end
 end

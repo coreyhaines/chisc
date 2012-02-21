@@ -18,7 +18,7 @@ class Board
     end
   end
 
-  def missing_values(row)
+  def missing_values_in_row(row)
     (1..9).to_a - row
   end
 end
