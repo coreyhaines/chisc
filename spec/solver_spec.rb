@@ -1,5 +1,7 @@
 
 
+require 'spec_helper.rb'
+
 class SudokoSolver
 
 describe SudokoSolver
