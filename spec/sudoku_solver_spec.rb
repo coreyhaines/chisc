@@ -14,7 +14,7 @@ end
 describe SudokuSolver do
   it "should be able to parse a board" do
      board = Board.parse(COMPLETE_BOARD)
-     SudokuSolver.new.complete(board)
+     solved_board = SudokuSolver.new.complete(board)
 
      
   end
