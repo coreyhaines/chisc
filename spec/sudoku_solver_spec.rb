@@ -7,7 +7,8 @@ describe SudokuSolver do
     it "returns an already completed board" do
 
       solver = SudokuSolver.new
-      solver.complete(COMPLETE_BOARD).should == COMPLETE_BOARD
+      board = Board.parse(COMPLETE_BOARD)
+      solver.complete(Board.parse(COMPLETE_BOARD)).should == board
     end
 
   end

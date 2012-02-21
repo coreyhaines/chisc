@@ -24,4 +24,8 @@ class Board
 
   alias :[] :row
 
+  def ==(other)
+    encoded == other.encoded
+  end
+
 end
