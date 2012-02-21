@@ -18,4 +18,8 @@ class Board
   def encode
     @board.flatten.join
   end
+
+  def square(index)
+    [1, 2, 3, 1, 2, 3, 1, 2, 3]
+  end
 end
